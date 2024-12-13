@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.szamologep.CalculatorController">
+    <TextField fx:id="num1Field"/>
+    <TextField fx:id="num2Field"/>
+    <HBox spacing="10">
+        <Button text="+" onAction="#add" />
+        <Button text="-" onAction="#subtract" />
+        <Button text="*" onAction="#multiply" />
+        <Button text="/" onAction="#divide" />
+        <Button text="%" onAction="#modulus" />
+    </HBox>
+    <Label fx:id="resultLabel" text="Result: " />
+</VBox>
